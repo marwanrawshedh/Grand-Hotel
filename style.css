@@ -621,7 +621,7 @@ opacity: .8;
     }
     .customer-image{margin-left: 0;}
     .footer-list{display: block;}
-    .creater-part{flex-direction: column;}
+    .creater-part{flex-direction: column;text-align: center;}
     
 }
 @media (max-width:500px) {
@@ -656,4 +656,12 @@ margin-bottom: 1.5rem;
 text-align: left;}
 .room-card-btn{width: 12rem;padding: 1rem .5rem;
 font-size: 1rem;}
+.customers-paragraph{font-size: 1.4rem;
+width: 80%;}
+.main-part{padding: 2rem;
+}
+.footer-input{
+    width: 12rem;
+}
+.image-wrapper{width: 9rem;}
 }
