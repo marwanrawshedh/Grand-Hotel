@@ -13,7 +13,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-z-index: 1;
+z-index: 10;
 }
 
 .menu-icon{margin-top: 3rem;cursor: pointer;
@@ -55,6 +55,7 @@ z-index: 1;
      color: #555;
  }
 .navigation{
+    z-index: 5;
 left: -32rem;
 position: fixed;
 width: 40rem;
@@ -578,4 +579,81 @@ opacity: .8;
 }
 .text-right span{
     color: goldenrod;
+}
+@media (max-width:1400px) {
+    .customers-card-wrapper{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .customer-card:first-child{
+
+        margin-bottom: 3rem;
+    }
+    .main-part{
+        flex-direction: column;
+
+    }
+    .footer-list{
+        display: flex;
+    }
+    .footer-list-link{margin-right: 3rem;}
+}
+@media (max-width:1200px) {
+    .about-us{
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+    .image{width: 25rem;;}
+    .about-us-content{margin-bottom: 18rem;}
+}
+@media (max-width:900px) {
+    .banner{text-align: center;}
+    .banner-heading{
+        font-size: 4.7rem;
+    }.banner-pargrapg{font-size: 2.6;}
+    .banner-button{width: 16rem;
+    font-size: 1.5rem;}
+}
+@media (max-width:700px) {
+    .customer-card{flex-direction: column;
+    width: 20rem;
+    }
+    .customer-image{margin-left: 0;}
+    .footer-list{display: block;}
+    .creater-part{flex-direction: column;}
+    
+}
+@media (max-width:500px) {
+.navigation{width: 28rem;}
+.navigation-search-iput{width: 
+    20rem
+}
+.image{width: 13rem;
+
+}
+.banner-heading{font-size: 2.5rem;
+text-align: center;}
+.sub-heading{font-size: 2rem;text-align: center;}
+.about-us-content{
+    padding: 5rem;
+    
+}
+.hotel-heading{font-size: 2rem;padding-top: 1rem;}
+.banner-heading{font-size: 3rem;}
+.banner-pargrapg{
+    font-size: 2rem;
+}
+.banner{height: 100%;margin-top: -7rem;}
+.common-heading{font-size: 2rem;}
+.small-underline{width: 5rem;}
+.big-underline{width: 12rem;}
+.room-card-heading{
+    font-size: 1.5rem;
+}
+.room-price{font-size: 2.5rem;
+margin-bottom: 1.5rem;
+text-align: left;}
+.room-card-btn{width: 12rem;padding: 1rem .5rem;
+font-size: 1rem;}
 }
